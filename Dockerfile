@@ -18,7 +18,7 @@ RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
 RUN chown -R www-data:www-data /var/lib/nginx
 
 # Add default nginx config
-ADD config/nginx-sites.conf /etc/nginx/sites-enabled/default
+ADD nginx-sites.conf /etc/nginx/sites-enabled/default
 
 # Install foreman
 RUN gem install foreman
